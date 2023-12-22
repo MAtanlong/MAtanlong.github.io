@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"感谢你到来，以后的日子我陪你走","path":"2023/12/05/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"感谢你到来，以后的日子我陪你走","path":"2023/12/05/hello-world/"},{"title":"vue基础难点总结","path":"2023/12/22/vue基础难点总结/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -264,7 +264,7 @@
         </a>
         <a href="/tags">
           <div>
-            <span>0</span>
+            <span>1</span>
             <span>标签</span>
           </div>
         </a>
@@ -327,7 +327,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>1 篇</span>
+        <span>2 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
@@ -358,12 +358,16 @@
       <div class="index-article">
         <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
         <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="感谢你到来，以后的日子我陪你走" />
+          <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="vue基础难点总结" />
         </div>
         <div class="index-article--content">
-          <a href="/2023/12/05/hello-world/">感谢你到来，以后的日子我陪你走 </a>
+          <a href="/2023/12/22/vue%E5%9F%BA%E7%A1%80%E9%9A%BE%E7%82%B9%E6%80%BB%E7%BB%93/">vue基础难点总结 </a>
           <div>
             
+            
+              <p>
+                <a class="-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a>
+              </p>
             
           </div>
           <div class="bg"></div>
@@ -373,12 +377,31 @@
   </div>
   <div class="index-center">
     
+      <div class="index-article">
+        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="感谢你到来，以后的日子我陪你走" />
+        </div>
+        <div class="index-article--content">
+          <a href="/2023/12/05/hello-world/">感谢你到来，以后的日子我陪你走 </a>
+          <div>
+            
+            
+              <p>
+                <a class="-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a>
+              </p>
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
   </div>
   <div class="index-right">
     <div class="index-right-wrapper">
       
-      
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">2023年12月</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">2023年12月</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 </div>
